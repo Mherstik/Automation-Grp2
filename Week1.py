@@ -21,3 +21,24 @@ print("C is", float(c),"and is a type", type(float(c)))
 print(type(d))
 print(d * a)
 
+
+firstName = "marcus"
+lastName = 'Herstik'
+# store 1 number as a string
+favNum = "34"
+secondNum = 7
+
+# print your FULL name
+print(firstName, lastName)
+print(firstName + " " +  lastName)
+#store it as a new variable
+full_name = firstName,lastName
+print(type(full_name))
+full_name = (firstName + " " +  lastName)
+
+print(full_name)
+
+
+
+
+
