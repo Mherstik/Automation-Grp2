@@ -39,6 +39,12 @@ full_name = (firstName + " " +  lastName)
 print(full_name)
 
 
+## add the numbers
+print(int(favNum) + secondNum)
 
+## multiply the numbers
+print(int(favNum) * secondNum)
 
+# store the multiplication as a new variable
+multi_num = int(favNum) * secondNum
 
