@@ -30,11 +30,24 @@ age = input("Please provide your age: ")
 #     print("You aren't Tom Jones. Go away!!")
 
 
-# if type(age) is int:
+# if age.isdigit():
 #     print("It's an integer")
-# if type(age) is not int:
+# else:
 #     print("It's not an integer")
+#     age = input("You didn't provide a number.\nPlease provide your age: ")
+#     if age.isdigit():
+#         print("It's an integer")
+#     else:
+#         print("It's not an integer")
+#         age = input("You didn't provide a number.\nPlease provide your age: ")
+
+attempt = 1
+while not age.isdigit():
+    age = input("You didn't provide a number.\nPlease provide your age: ")
+    attempt = attempt +1
+    print(attempt)
+    if attempt == 3:
+        print("Go away!!")
+        break
     
-    
-    
-    
+        
