@@ -49,5 +49,17 @@ while not age.isdigit():
     if attempt == 3:
         print("Go away!!")
         break
+
+age = int(age)
+        
     
         
+### Are they 18 or over
+if age >= 18:    
+    ## If yes - print something
+    print("You are over 18. Congratulations")
+    # if not - print something else
+else:
+    print("Sorry, you are too young")
+
+
