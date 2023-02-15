@@ -9,16 +9,15 @@ name = input("What is your name: ")
 drinkType = input("Do you want coffee or tea: ")
 drinkType = drinkType.lower()
 
-while is not (drinkType == "yes" or drinkType == "y" or drinkType =="n" or drinkType == "no"):
+while not (drinkType == "yes" or drinkType == "y" or drinkType =="n" or drinkType == "no" or drinkType == "coffee" or drinkType == "tea" or drinkType=="t" or drinkType== "c"):
     print("Please choose either yes or no")
     drinkType = input("Do you want coffee or tea: ")
-
-
 
 if drinkType.lower() == "no":
     print("Sorry, goodbye")
     exit()
     #break
 
+milkList = 
 
 print("Ok")
