@@ -18,6 +18,22 @@ if drinkType.lower() == "no":
     exit()
     #break
 
-milkList = 
+milkList = ["no", "full cream", "soy", "skim", "lactose free", "oat", "almond",  "goat", "rice"]
+
+milkChoice = input("Do you want milk? It is really good for you!\r\nIf so, what type?")
+
+while milkChoice not in milkList:
+    print("Please choose a milk type or no\r\nChoices are: ", milkList) # full cream, soy, skim, lactose free, oat, almond,  goat, rice"
+    milkChoice = input("Do you want milk? It is really good for you!\r\nIf so, what type?")
+
+sugarChoice = input("Do you want sugar? [y/n]")
+while sugarChoice not in ['y','n']:
+    sugarChoice = input("Do you want sugar? [y/n]")
+
+if sugarChoice == 'y':
+    sugarNum = input("How many do you want: ")
+    while sugarNum.isnumeric() and float(sugarNum) > 3.0:
+        sugarNum = input("How many do you want?\r\nChoose no more than 3:")
+        
 
 print("Ok")
