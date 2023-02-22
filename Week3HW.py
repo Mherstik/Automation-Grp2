@@ -9,7 +9,14 @@ name = input("What is your name: ")
 drinkType = input("Do you want coffee or tea: ")
 drinkType = drinkType.lower()
 
-while not (drinkType == "yes" or drinkType == "y" or drinkType =="n" or drinkType == "no" or drinkType == "coffee" or drinkType == "tea" or drinkType=="t" or drinkType== "c"):
+while not (drinkType == "yes"
+           or drinkType == "y"
+           or drinkType =="n"
+           or drinkType == "no"
+           or drinkType == "coffee"
+           or drinkType == "tea"
+           or drinkType=="t"
+           or drinkType== "c"):
     print("Please choose either yes or no")
     drinkType = input("Do you want coffee or tea: ")
 
@@ -18,7 +25,15 @@ if drinkType.lower() == "no":
     exit()
     #break
 
-milkList = ["no", "full cream", "soy", "skim", "lactose free", "oat", "almond",  "goat", "rice"]
+milkList = ["no",
+            "full cream",
+            "soy",
+            "skim",
+            "lactose free",
+            "oat",
+            "almond",
+            "goat",
+            "rice"]
 
 milkChoice = input("Do you want milk? It is really good for you!\r\nIf so, what type?")
 
