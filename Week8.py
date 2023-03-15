@@ -51,7 +51,11 @@ while True:
         print("It's not a number")
 
 print(portList2)
+
+###########
 # Get IP address from user
+###########
+
 
 userIP = input("Give me an IP address: ")
 #print(userIP)
