@@ -60,7 +60,6 @@ def getPort():
 def isValidIPAddress(ip_address_str):
     # Split the IP address into its components
     ip_components = ip_address_str.split(".")
-
     # Check that the IP address has 4 components
     if len(ip_components) != 4:
         return False
@@ -80,15 +79,11 @@ def getIPAddress():
     while True:
         ip_address_str = input("Enter an IP address: ")
         if isValidIPAddress(ip_address_str):
-            print("Valid IP address:", ip_address_str)
+            #print("Valid IP address:", ip_address_str)
             return ip_address_str
             #break
         else:
             print("Invalid IP address")
-            #ip_address_str = input("Enter an IP address: ")
-            #continue
-
-        #getIPAddress()
 
 ipAdd = getIPAddress()
 #getPort()
