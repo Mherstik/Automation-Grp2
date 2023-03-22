@@ -42,9 +42,9 @@ def getPort():
     print("Give me a port.\nPress X to exit. ")
     while True:
         port = input("Port: ")
-        if port.isdigit():
+        if port.isdigit() and int(port) in range(1,65535):
             # print("it's a decimal")
-            portList2.append(port)        
+            portList2.append(int(port))
         elif port.lower() == "x":
             #print("We're out of here")
             break
@@ -86,7 +86,26 @@ def getIPAddress():
             print("Invalid IP address")
 
 ipAdd = getIPAddress()
-#getPort()
+getPort()
 print(ipAdd)
-#print(portList2)
+print(portList2)
+
+
+import socket
+for port in portList2:
+    socket.setdefaulttimeout(1.0)
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((ipAdd,port))
+        try:
+            banner = s.recv(1024).decode()
+            print(f"{ipAdd} at port {port} is open with banner: \n\t{banner}")
+        except:
+            print(f"{port} is open")
+    except:
+        print(f"{port} is closed")
+    finally:
+        s.close()
+
+
 
