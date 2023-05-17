@@ -1,0 +1,27 @@
+
+PASSWORDS
+---------
+chuckie16
+KYNZh9t51nCLiIK
+
+Useraccount: backup
+
+SAMBA service
+
+Game: Nethack
+
+Paul has sudo
+Allison has sudo
+Paul has Uncle Albert
+
+Dr Balustrade
+
+Webstats uploaded to website
+
+DB: web
+tbl: members
+UN: web
+PW: supersecret
+table: coretemp
+table: test
+ 
