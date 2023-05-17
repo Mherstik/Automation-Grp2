@@ -1,9 +1,9 @@
 import string
-a = input("letter: ")
-b = int(input("Number: "))
+a = input("Text to convert: ")
+shift = int(input("Numshifter to shift: "))
 for each in a:
         x = string.ascii_uppercase.index(each)
-        print(each,"is position", x, "+", b, " = ", x+b)
-        print("More than A-Z becomes", (x+b) % 26, "=",string.ascii_uppercase[((x+b)%26)] )
+        print(each,"is position", x, "+", shift, " = ", x+shift)
+        print("More than A-Z shiftecomes", (x+shift) % 26, "=",string.ascii_uppercase[((x+shift)%26)] )
 
     
